@@ -19,7 +19,7 @@ namespace DemoBD.Models
         public Boolean tienebeca { get; set; }
         [ForeignKey("IdCarrera")]
         public int IdCarrera { get; set; }
-        public Carrera carrera { get; set; }
+        public Carrera? carrera { get; set; }
 
     }
 }

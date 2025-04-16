@@ -22,7 +22,9 @@ namespace DemoBD.Controllers
         // GET: Facultads
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Facultad.ToListAsync());
+            var listaFacultades = await _context.Facultad.TolistAsync();
+            listaFacultades = listaFacultades.FindAll(item => item.Nombre== "FICA").Tolist();
+            return View()
         }
 
         // GET: Facultads/Details/5

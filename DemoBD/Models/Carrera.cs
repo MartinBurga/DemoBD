@@ -13,6 +13,6 @@ namespace DemoBD.Models
 
         public int IdFacultad { get; set; }
         [ForeignKey("IdFacultad")]
-        public Facultad facultad { get; set; }
+        public Facultad? facultad { get; set; }
     }
 }

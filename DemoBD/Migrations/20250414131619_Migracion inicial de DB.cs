@@ -41,7 +41,7 @@ namespace DemoBD.Migrations
                         column: x => x.IdFacultad,
                         principalTable: "Facultad",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
